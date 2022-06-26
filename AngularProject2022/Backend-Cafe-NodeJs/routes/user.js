@@ -19,6 +19,7 @@ router.post('/signup', (req, res) => {
                     }
                 })
             }
+        
 
             else {
                 return res.status(400).json({ message: "email already exits." });
@@ -34,7 +35,7 @@ router.post('/signup', (req, res) => {
         } else {
             return res.status(500).json(err);
         }
-
-    })
-    
-    module.exports = router;
+       
+    });
+});
+module.exports = router;
